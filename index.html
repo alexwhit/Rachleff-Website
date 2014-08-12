@@ -6,7 +6,8 @@
 <style type="text/css">
 body {background-color:#F3F3ED;}
 div.mainbase {background-color: white;
-			  width: 500px;<!--make flexible-->
+			  vertical-align: middle;
+			  width: 1000px;<!--make flexible-->
 			  height: 1000px;
 			  display: inline-block;
 			  border-style: solid;
@@ -18,8 +19,25 @@ div.mainbase {background-color: white;
 div.header {padding: 20px;
 			}
 			
-div.body {padding-left: 20px;
-			 padding-right: 20px;
+			div.rlogo {float: left;		
+					   padding-right: 25px;
+						}
+						
+			div.imagebar {overflow: hidden;
+						  height: 90px;
+						  width: 645px;
+						  }
+						  
+			div.navbar {font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+						font-size: 15px;
+						height: 30px;
+						width: 100%;
+						padding-top: 5px;
+						}
+			
+div.body {clear: both;
+		  padding-left: 40px;
+		  padding-right: 40px;
 			}
 			
 div.footer {padding-left: 20px;
@@ -29,10 +47,16 @@ div.footer {padding-left: 20px;
 			  
 p.body {font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		text-align: justify;
+		font-size: 17px;
 		}
+
+p.bodyheader {font-family: Cambria, Georgia, serif;
+			  font-size: 25px;
+			  font-weight: bold;
+			  }
 		
 p.footer {font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-		  text-align: justify;
+		  text-align: center;
 		  font-size: 10px;
 		  font-color: #D6D6D3;
 		  }
@@ -41,15 +65,51 @@ p.footer {font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-
 
 <body>
 <!--place entire body here-->
-<center>
 <div class="mainbase">
 	<div class="header">
-	header
+		<div class="rlogo">
+			<img src="img/RS_logo1.png" height=120>
+		</div>
+		<div class="imagebar">
+			<img src="img/scrolling/1.jpg" height=90>
+			<img src="img/scrolling/2.jpg" height=90>
+			<img src="img/scrolling/3.jpg" height=90>
+			<img src="img/scrolling/4.jpg" height=90>
+			<img src="img/scrolling/5.jpg" height=90>
+			<img src="img/scrolling/1.jpg" height=90>
+		</div>
+		<div class="navbar">
+			<table border="0" style="width:600px; background-color:#F3F3ED; padding-left:15px">
+				<td>HOME</td>
+				<td>ABOUT</td>
+				<td>PHOTOS</td>
+				<td>STUDENTS</td>
+				<td>THE SOCIETY</td>
+			</table>
+		</div>
 	</div>
 	
 	<div class="body">
 		<p class="body">
-		never forget Gi yun and the $200 pizza and also fuck Mitchell because he sucks so much even though we like him now
+		Welcome to the Rachleff Scholars website! Rachleff scholars in an undergraduate research program in the School of Engineering and Applied Sciences at the University of Pennsylvania. This program seeks to promote engineering research and encourage undergraduates to stay in the engineering profession.
+        <br><br>
+		For more information about the program and how to apply, check the About section. For information about the Rachleff Scholar Society and their activities, look at The Society and the About sections. For information on individual students and their projects, click on the Students page.
+		</p>
+		
+		<p class="bodyheader">
+		News and Events
+		</p>
+		
+		<p class="body">
+		<b> Rachleff Scholars had a symposium! </b> <i> August 5, 2014 </i>
+		<br>
+		It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.
+		</p>
+		
+		<p class="body">
+		<b> Rachleff Scholars had a symposium! </b> <i> August 5, 2014 </i>
+		<br>
+		It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.It was cool.
 		</p>
 	</div>
 	
@@ -59,7 +119,6 @@ p.footer {font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-
 		</p>
 	</div>
 </div>
-</center>
 </body>
 
 
